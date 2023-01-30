@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+     <form action="/Distribute/" method="POST" style="display: inline-block;left: 40%;position: relative">
+         <input style="font-size: 40px;height: 50px" class="form-control" type="text" name="node_id"  placeholder="请输入节点ID" required autofocus><br><br>
+         <input style="font-size: 40px;height: 50px" class="form-control" type="text" name="flow_id"  placeholder="请输入流表项ID" required autofocus><br><br>
+         <input style="font-size: 40px;height: 50px" class="form-control" type="text" name="priority"  placeholder="请输入优先级" required autofocus><br><br>
+         <input style="font-size: 40px;height: 50px" class="form-control" type="text" name="hard_timeout"  placeholder="请输入硬超时" required autofocus><br><br>
+         <input style="font-size: 40px;height: 50px" class="form-control" type="text" name="idle_timeout"  placeholder="请输入空闲超时" required autofocus><br><br>
+         <input style="font-size: 40px;height: 50px" class="form-control" type="text" name="in_port"  placeholder="请输入输入端口" required autofocus><br><br>
+         <input style="font-size: 40px;height: 50px" class="form-control" type="text" name="output_port"  placeholder="请输入输出端口" required autofocus><br><br>
+         <input type="submit"   value="下发流表"  style="color:salmon; text-align: center;font-size: 40px; height: 50px">
+         {% csrf_token %}
+     </form>
+</body>
+</html>
